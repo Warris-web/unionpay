@@ -18,9 +18,9 @@ import watercolor from "../../assets/images/watercolor.png";
 import playstore from "../../assets/images/play-store.png";
 import appstore from "../../assets/images/app-store.png";
 import nihaophone from "../../assets/images/nihao-phone.png";
-import slide1 from "../../assets/images/slide1.png";
-import slide2 from "../../assets/images/slide2.png";
-import slide3 from "../../assets/images/slide1.png";
+import slide1 from "../../assets/images/image2.png";
+import slide2 from "../../assets/images/image2.png";
+import slide3 from "../../assets/images/image2.png";
 
 const heroSlides = [
   {
@@ -76,13 +76,13 @@ export default function Home() {
         {heroSlides.map((slide, index) => (
   <div
     key={index}
-    className="relative h-[520px] md:h-[640px] overflow-hidden"
+    className="relative h-[620px] md:h-[760px] overflow-hidden"
   >
     {/* Background Image */}
     <img
       src={slide.image}
       alt=""
-      className="absolute inset-0 w-full h-full object-cover object-center"
+      className="absolute inset-0 w-full h-full object-cover object-[100%_20%]"
     />
 
     {/* Red SVG Shape */}
@@ -110,7 +110,7 @@ export default function Home() {
         <Reveal delay={220}>
           <a
             href="#register"
-            className="inline-block mt-10 text-white text-xl font-semibold border-b-2 border-white pb-1 hover:opacity-90 hmecoursellink"
+            className="inline-block mt-10 text-white text-xl pb-1 hover:opacity-90 hmecoursellink"
           >
             {slide.cta}
           </a>
@@ -332,7 +332,7 @@ export default function Home() {
               <p className="text-slate leading-relaxed prudentbanktxt">{bankPartner.body}</p>
               <a
                 href="#register"
-                className="inline-flex items-center gap-2 mt-7 text-navy font-semibold border-b-2 border-red pb-0.5 hover:gap-3 transition-all prudentbanktxtlink"
+                className="inline-flex items-center gap-2 mt-7 text-navy pb-0.5 hover:gap-3 transition-all prudentbanktxtlink"
               >
                 {bankPartner.cta} 
               </a>

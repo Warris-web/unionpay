@@ -190,9 +190,30 @@
     line-height: 40.05px;
     letter-spacing: -0.52px;
     color: #5992A2;
-    border-bottom: #5992A2 solid 1px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0;
 
 }
+
+.prudentbanktxtlink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background: #5992A2;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+.prudentbanktxtlink:hover::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
 .mt7em{
     margin-top: 7em;
 }
@@ -498,7 +519,6 @@
     line-height: 40.05px;
     letter-spacing: -0.52px;
     color: #FFFFFF;
-    border-bottom: 1px solid #fff;
     padding-bottom: 0;
 }
 .hmecoursellink:hover{
@@ -671,6 +691,52 @@
 }
 .nihaochinaapptoptxtdownload{
 
+
+}
+.hmecoursellink {
+  position: relative;
+  display: inline-block;
+}
+
+.hmecoursellink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+.hmecoursellink:hover::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+@media screen and (max-width: 1040px) {
+    .hmecourselh1 {
+        font-size: 40px;
+        line-height: 45.09px;
+    }
+    .hmecourselp {
+        font-family: Noto Sans;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 17px;
+        leading-trim: NONE;
+        line-height: 26px;
+    }
+    .hmecoursellink {
+        font-family: Noto Sans;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 17px;
+        leading-trim: NONE;
+        line-height: 28.05px;
+    }
+
 }
 @media screen and (max-width: 835px) {
     .hmewidth83percent{
@@ -757,6 +823,7 @@
         leading-trim: NONE;
         line-height: 27.05px;
     }
+    
     .traderh1 {
         font-family: Noto Sans;
         font-weight: 600;
