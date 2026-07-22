@@ -1,0 +1,486 @@
+@font-face {
+  font-family: "UnionFont";
+  src: url("../style/Font/Founder-Heiti-SC-of-UnionPay.ttf") format("truetype");
+  /* font-weight: 400;
+  font-style: normal; */
+}
+.colorDB1E33{
+    color: #DB1E33
+}
+.bgDB1E33{
+    background-color: #DB1E33;
+}
+.footerbg{
+    /* border-radius: 0 0 15px 15px; */
+
+}
+.mlauto{
+    margin-left: auto;
+}
+.pt3point6em{
+    padding-top: 3.6em;
+}
+/* Footer */
+.footerlogotxt{
+    font-family: Noto Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 23.36px;
+    leading-trim: NONE;
+    line-height: 33.37px;
+    letter-spacing: -0.25px;
+    color: #FFFFFF;
+}
+.pt1point6em{
+    padding-top:1.6em
+}
+.footerlink{
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 23.36px;
+    leading-trim: NONE;
+    line-height: 33.37px;
+    letter-spacing: -0.25px;
+    color: #FFFFFF;
+}
+.footerlink:hover{
+    opacity: 0.8;
+}
+.footertxtunion{
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-style: Italic;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+
+}
+.footerprivacylink{
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 23.36px;
+    leading-trim: NONE;
+    line-height: 33.37px;
+    letter-spacing: -0.25px;
+    color: #FFFFFF
+
+}
+.footerprivacylink:hover{
+    opacity: 0.8
+}
+/* Header */
+.headerbg{
+
+}
+.headerlink{
+    font-family: Noto Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 22px;
+    leading-trim: NONE;
+    line-height: 33.37px;
+    letter-spacing: -0.25px;
+    color: #0F172A;
+    margin-left:10px
+
+
+
+}
+.pt6em{
+    padding-top: 6em;
+
+}
+.headerlink:hover{
+    opacity:0.8
+
+}
+.headerdiv{
+    padding: 3em 10px;
+}
+.whoweare{
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 40px;
+    letter-spacing: 0.66px;
+    text-align: center;
+    color: #0F172A;
+
+}
+.whowearep{
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 50.06px;
+    leading-trim: NONE;
+    line-height: 60.07px;
+    letter-spacing: 0.66px;
+    text-align: center;
+    color: #0F172A;
+    margin: 0
+   
+}
+.whowearetxt{
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 26px;
+    leading-trim: NONE;
+    line-height: 43px;
+    letter-spacing: -0.73px;
+    text-align: center;
+    color: #475569;
+
+}
+.pt-6em{
+    padding-top: 6em;
+}
+.width83percent{
+    width: 83%;
+}
+.prudentbankh1{
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 50.06px;
+    leading-trim: NONE;
+    line-height: 60.07px;
+    letter-spacing: 0.66px;
+    text-align: center;
+    color: #0F172A;
+
+}
+.prudentbankp{
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 43px;
+    letter-spacing: -0.73px;
+    text-align: center;
+    color: #0E3E83;
+
+}
+.prudentbanktxt{
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 26px;
+    leading-trim: NONE;
+    line-height: 43px;
+    letter-spacing: -0.73px;
+    color: #475569;
+    margin-top: -6.5em;
+
+}
+.prudentbanktxtlink{
+    font-family: Noto Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 22px;
+    leading-trim: NONE;
+    line-height: 40.05px;
+    letter-spacing: -0.52px;
+    color: #5992A2;
+    border-bottom: #5992A2 solid 1px;
+
+}
+.mt7em{
+    margin-top: 7em;
+}
+.flipimagetrader{
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.traderh1{
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 48px;
+    leading-trim: NONE;
+    line-height: 50px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #FFFFFF
+
+}
+.traderp{
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 26.6px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #FFFFFF
+
+}
+.bgE31837{
+    background-color: #E31837;
+}
+.regform{
+    background-color: #003D6D;
+        border-bottom-right-radius: 80px;
+
+}
+.mauto{
+    margin:auto
+}
+.mw71percent{
+    max-width: 71%;
+}
+.formsubmitbtn{
+        background: #E31837;
+    border-radius: 8px;
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-style: Display SemiBold;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 12px 55px;
+    border: 1px solid #E31837;
+}
+.formsubmitbtn:hover{
+    background-color: transparent;
+    
+}
+.regformhead{
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 23.36px;
+    leading-trim: NONE;
+    line-height: 33.37px;
+    letter-spacing: -0.25px;
+    color: #FFFFFF;
+    margin-bottom: 2.5em;
+}
+.regformheadfield{
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 33.37px;
+    letter-spacing: -0.25px;
+    color: #fff;
+
+
+}
+.faqh1{
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 50.06px;
+    leading-trim: NONE;
+    line-height: 60.07px;
+    letter-spacing: 0.66px;
+    color: #fff
+
+}
+.faqp{
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 26px;
+    letter-spacing: -0.52px;
+
+}
+.faqundertxt{
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 50.06px;
+    leading-trim: NONE;
+    line-height: 60.07px;
+    letter-spacing: 0.66px;
+    padding: 1em 0;
+    color: #0F172A
+}
+.faqundertxttop{
+
+}
+.faqquesh1{
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-style: Display SemiBold;
+    font-size: 20.02px;
+    leading-trim: NONE;
+    line-height: 26.7px;
+    letter-spacing: 0px;
+    color: #033484;
+}
+.faqquesh2{
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-style: Display SemiBold;
+    font-size: 24.7px;
+    leading-trim: NONE;
+    line-height: 40.05px;
+    letter-spacing: -0.52px;
+    color: #0F172A
+
+}
+.faqquestxt{
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #606060;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+
+}
+.mt10px{
+    margin-top: 10px
+}
+.benefithead{
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-style: Display SemiBold;
+    font-size: 30.03px;
+    leading-trim: NONE;
+    line-height: 39px;
+    letter-spacing: -0.73px;
+    color: #FFFFFF
+
+}
+.benefitheadp{
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 21px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #fff
+
+}
+.benefittdxt{
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #fff;
+    margin-top: 10px;
+
+}
+.pr8point3em{
+     padding-right: 8.3em;
+}
+.mw98percent{
+    max-width: 98%;
+}
+#nihao {
+    position: relative;
+}
+
+#nihao::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background:
+      radial-gradient(circle at bottom left,
+      rgba(64,122,89,.12),transparent 45%),
+      radial-gradient(circle at bottom center,
+      rgba(64,122,89,.12),transparent 55%);
+}
+.cardlifestyleh{
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 48px;
+    leading-trim: NONE;
+    line-height: 61px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #FFFFFF
+}
+.cardlifestylep{
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 26.6px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #FFFFFF
+
+}
+.hero-shape {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 58%;
+    background: #E41E3F;
+
+    clip-path: polygon(
+        0 0,
+        82% 0,
+        58% 100%,
+        0 100%
+    );
+
+    border-bottom-left-radius: 120px;
+}
+.hmecourselh1{
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 65px;
+    leading-trim: NONE;
+    line-height: 80.09px;
+    letter-spacing: 0px;
+    color: #fff
+}
+.hmecourselp{
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 25px;
+    leading-trim: NONE;
+    line-height: 43px;
+    letter-spacing: -0.73px;
+    color: #fff;
+
+}
+.hmecoursellink{
+    font-family: Noto Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 25px;
+    leading-trim: NONE;
+    line-height: 40.05px;
+    letter-spacing: -0.52px;
+    color: #FFFFFF;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 0;
+}
+.hmecoursellink:hover{
+
+
+}

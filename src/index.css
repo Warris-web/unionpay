@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-red: #DA2131;
+  --color-red-deep: #B01727;
+  --color-navy: #14315B;
+  --color-navy-deep: #0D2144;
+  --color-paper: #F7F8FA;
+  --color-slate: #5B6472;
+  --color-line: #E4E7EC;
+
+  --font-display: 'Sora', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+    background-color: #ffffff;
+    color: var(--color-navy);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+  ::selection {
+    background: var(--color-red);
+    color: white;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-red);
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .eyebrow {
+    font-family: var(--font-mono);
+    letter-spacing: 0.16em;
+    font-size: 0.7rem;
+  }
+
+  /* Diagonal-cut block: the page's structural signature, echoing the
+     angled red/navy panels in the brand's original layout. */
+  .diagonal-r {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 42%, 46% 0);
+  }
+  .diagonal-br {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .cut-corner-br {
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 88% 100%, 0 100%);
+  }
+  .cut-corner-tr {
+    clip-path: polygon(0 0, 88% 0, 100% 18%, 100% 100%, 0 100%);
+  }
+
+  /* dotted world-map texture, used behind the stats block */
+  .dot-map {
+    background-image: radial-gradient(circle, #C7CDD8 1.4px, transparent 1.4px);
+    background-size: 10px 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
