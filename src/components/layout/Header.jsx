@@ -23,7 +23,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto flex items-center justify-between md:h-[72px] headerdiv">
         <a href="#top" className="flex items-center gap-2">
           <span className="relative rounded-md overflow-hidden flex shrink-0">
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" className='width65linkimg' />
           </span>
         </a>
 

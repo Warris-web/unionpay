@@ -788,8 +788,27 @@
 
 }
 @media screen and (max-width: 506px) {
+    .width65linkimg{
+        width: 65px
+    }
+    .footerlogotxt {
+        font-size: 18.36px;
+        line-height: 25.37px;
+    }
+    .footerlink {
+        font-size: 18.36px;
+        line-height: 17.37px;
+    }
     .mt7-5em{
         margin-top: 5em;
+    }
+    .footertxtunion {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .footerprivacylink {
+        font-size: 18.36px;
+        line-height: 19.37px;
     }
     .prudentbankh1 {
         font-family: Noto Sans;
