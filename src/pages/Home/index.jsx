@@ -65,80 +65,55 @@ export default function Home() {
   return (
     <main id="top" className="overflow-x-clip">
       {/* ================= HERO ================= */}
-     {/* ================= HERO ================= */}
 
-    <section className="relative pt-16 md:pt-[72px] overflow-hidden pt6em">
+    <section className="relative pt-16 md:pt-[72px] overflow-hidden hmeheaderpt">
       <HeroCarousel>
         {heroSlides.map((slide, index) => (
-          <div
-            key={index}
-            className="relative h-[520px] md:h-[640px] overflow-hidden "
+  <div
+    key={index}
+    className="relative h-[520px] md:h-[640px] overflow-hidden"
+  >
+    {/* Background Image */}
+    <img
+      src={slide.image}
+      alt=""
+      className="absolute inset-0 w-full h-full object-cover object-center"
+    />
+
+    {/* Red SVG Shape */}
+    <HeroShape color={slide.color} />
+
+    {/* Content */}
+    <div className="relative z-20 max-w-7xl mx-auto h-full px-6 md:px-10 flex items-center">
+      <div className="max-w-lg">
+        <Reveal>
+          <h1 className="font-display font-extrabold text-white text-5xl md:text-7xl leading-[1.05] hmecourselh1">
+            {slide.title.split("\n").map((line) => (
+              <span key={line} className="block">
+                {line}
+              </span>
+            ))}
+          </h1>
+        </Reveal>
+
+        <Reveal delay={120}>
+          <p className="mt-8 text-white/90 text-lg leading-9 max-w-md hmecourselp">
+            {slide.body}
+          </p>
+        </Reveal>
+
+        <Reveal delay={220}>
+          <a
+            href="#register"
+            className="inline-block mt-10 text-white text-xl font-semibold border-b-2 border-white pb-1 hover:opacity-90 hmecoursellink"
           >
-            {/* Background Image */}
-            <img
-              src={slide.image}
-              alt=""
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-
-            {/* Left Overlay */}
-            {/* <div
-              className="absolute inset-y-0 left-0 w-full md:w-[58%]"
-              style={{
-                background: slide.color,
-                clipPath: "polygon(0 0, 82% 0, 58% 100%, 0% 100%)",
-                borderBottomLeftRadius: "120px",
-              }}
-            /> */}
-            <HeroShape color={slide.color} />
-
-            {/* Content */}
-            <div
-                key={index}
-                className="relative h-[520px] md:h-[640px] overflow-hidden"
-              >
-                {/* Background */}
-                <img
-                  src={slide.image}
-                  alt=""
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-
-                {/* SVG Shape */}
-                <HeroShape color={slide.color} />
-
-                {/* Content */}
-                <div className="relative z-20 max-w-6xl mx-auto h-full px-6 md:px-8 flex items-center">
-                  <div className="max-w-lg">
-                    <Reveal>
-                      <h1 className="font-display font-extrabold text-white text-5xl md:text-7xl leading-[1.05] hmecourselh1">
-                        {slide.title.split("\n").map((line) => (
-                          <span key={line} className="block">
-                            {line}
-                          </span>
-                        ))}
-                      </h1>
-                    </Reveal>
-
-                    <Reveal delay={120}>
-                      <p className="mt-8 text-white/90 text-lg leading-9 max-w-md hmecourselp">
-                        {slide.body}
-                      </p>
-                    </Reveal>
-
-                    <Reveal delay={220}>
-                      <a
-                        href="#register"
-                        className="inline-block mt-10 text-white text-xl font-semibold border-b-2 border-white pb-1 hover:opacity-90 hmecoursellink "
-                      >
-                        {slide.cta}
-                      </a>
-                    </Reveal>
-                  </div>
-                </div>
-              </div>
-          </div>
-        ))}
+            {slide.cta}
+          </a>
+        </Reveal>
+      </div>
+    </div>
+  </div>
+))}
       </HeroCarousel>
     </section>
 
@@ -293,7 +268,7 @@ export default function Home() {
 
       {/* ================= BENEFITS ================= */}
 
-      <section id="benefits" className="py-16 md:py-20 mw98percent">
+      <section id="benefits" className="py-16 md:py-20 mw98percent pb0  pt0">
         <div className="relative overflow-hidden">
           {/* Background Shape */}
           <svg
@@ -364,7 +339,7 @@ export default function Home() {
 
 
       {/* ================= NIHAO APP ================= */}
-      <section id="nihao" className="py-16 md:py-24 px-4">
+      {/* <section id="nihao" className="py-16 md:py-24 px-4">
     <div
       className="relative overflow-hidden max-w-7xl mx-auto
                 rounded-tr-[40px] md:rounded-tr-[60px]
@@ -374,22 +349,22 @@ export default function Home() {
         clipPath:
           "polygon(0 0,100% 0,100% 5%,97% 25%,93% 50%,97% 75%,100% 95%,95% 100%,0 100%)",
       }}
-    >
+    > */}
       {/* Background image */}
-      <div
+      {/* <div
         className="absolute inset-0 opacity-30 bg-cover bg-bottom"
         style={{
           backgroundImage: "url('/images/china-watercolor.png')",
         }}
-      />
+      /> */}
 
       {/* Soft overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/30 to-transparent" />
+      {/* <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/30 to-transparent" />
 
-      <div className="relative z-10 grid lg:grid-cols-2 items-center gap-12 px-8 md:px-14 py-16 md:py-20">
+      <div className="relative z-10 grid lg:grid-cols-2 items-center gap-12 px-8 md:px-14 py-16 md:py-20"> */}
 
         {/* LEFT */}
-        <div className="max-w-xl">
+        {/* <div className="max-w-xl">
 
           <Reveal>
             <h2 className="font-display font-bold text-5xl text-navy leading-tight">
@@ -431,10 +406,10 @@ export default function Home() {
             </div>
           </Reveal>
 
-        </div>
+        </div> */}
 
         {/* PHONE */}
-        <Reveal delay={120}>
+        {/* <Reveal delay={120}>
           <div className="flex justify-center lg:justify-end">
 
             <img
@@ -448,7 +423,7 @@ export default function Home() {
 
       </div>
     </div>
-      </section>
+      </section> */}
 
       {/* ================= FAQS ================= */}
       <section>

@@ -468,6 +468,15 @@
     color: #fff;
 
 }
+.bgwhite{
+    background-color: #fff;
+}
+.pt0{
+    padding-top: 0;
+}
+.pb0{
+    padding-bottom: 0;
+}
 .hmecoursellink{
     font-family: Noto Sans;
     font-weight: 500;
@@ -481,6 +490,47 @@
     padding-bottom: 0;
 }
 .hmecoursellink:hover{
+
+
+}
+.hmeheaderpt{
+    padding-top: 6em;
+}
+.hmetophero1{
+
+}
+.hmetophero2{
+
+}
+.object-fill{
+    object-fit: fill;
+}
+@media screen and (max-width: 835px) {
+  .faqh1 {
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 29.06px;
+    leading-trim: NONE;
+    line-height: 29.07px;
+  }
+  .faqp {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 15px;
+  }
+  .prudentbanktxt{
+    margin-top: 0
+  }
+}
+@media screen and (max-width: 767px) {
+    .hmeheaderpt{
+        padding-top: 0em;
+    }
+    .headerdiv {
+        padding: 1em 20px;
+    }
 
 
 }
