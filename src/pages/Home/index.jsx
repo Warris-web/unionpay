@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { ArrowRight, Banknote, Globe2,ChevronDown, Landmark, ShieldCheck, ShoppingBag, Smartphone, Wallet } from 'lucide-react'
+import { motion } from 'framer-motion'
 import FAQCategory from '../../components/ui/FAQCategory'
 import Reveal from '../../components/ui/Reveal'
 import CountUp from '../../components/ui/CountUp'
@@ -632,7 +633,7 @@ function FAQSection() {
       </button>
 
       {/* FAQ PANEL */}
-      <div
+      {/* <div
         ref={panelRef}
         style={{
           maxHeight: open
@@ -640,7 +641,15 @@ function FAQSection() {
             : 0
         }}
         className="overflow-hidden transition-[max-height] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
-      >
+      > */}
+      <motion.div
+  initial={false}
+  animate={{
+    height: open ? "auto" : 0,
+    opacity: open ? 1 : 0,
+  }}
+  transition={{ duration: 0.45 }}
+  className="overflow-hidden">
         <div className="max-w-6xl mx-auto px-5 md:px-8 py-12 faqundertxttop">
           <h3 className="font-display font-bold text-2xl md:text-3xl text-navy mb-8 faqundertxt">
             {faqIntro.title}
@@ -657,7 +666,8 @@ function FAQSection() {
             ))}
           </div>
         </div>
-      </div>
+      {/* </div> */}
+      </motion.div>
     </section>
   )
 }

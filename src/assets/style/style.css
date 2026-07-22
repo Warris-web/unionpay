@@ -505,6 +505,9 @@
 .object-fill{
     object-fit: fill;
 }
+.maxheight9point3em{
+    max-height: 9.3em;
+}
 @media screen and (max-width: 835px) {
   .faqh1 {
     font-family: Noto Sans;
