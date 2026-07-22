@@ -1,3 +1,7 @@
+import  globesvg  from '../assets/images/globe.png';
+import  shieldsvg  from "../assets/images/shield.png";
+import  checksvg  from "../assets/images/check.png";
+
 export const nav = [
   { label: 'About Us', href: '#about' },
   { label: 'Benefits', href: '#benefits' },
@@ -20,9 +24,9 @@ export const hero = {
 }
 
 export const heroStats = [
-  { value: 180, suffix: '+', label: 'Countries', sub: 'Global coverage' },
-  { value: 100, suffix: '%', label: 'Secured & Safe', sub: 'Bank-level security' },
-  { value: 1, suffix: 'B+', label: 'Trusted by', sub: "World's largest consumer base" },
+  { value: 180, suffix: '+', label: 'Countries', sub: 'Global coverage', icon: globesvg, },
+  { value: 100, suffix: '%', label: 'Secured & Safe', sub: 'Bank-level security', icon: shieldsvg, },
+  { value: 1, suffix: 'B+', label: 'Trusted by', sub: "World's largest consumer base", icon: checksvg, },
 ]
 
 export const about = {

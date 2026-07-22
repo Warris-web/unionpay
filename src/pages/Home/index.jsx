@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { ArrowRight, Banknote, Globe2,ChevronDown, Landmark, ShieldCheck, ShoppingBag, Smartphone, Wallet } from 'lucide-react'
+import { FaBeer, FaCoffee, FaHome, FaGlobe } from 'react-icons/fa';
 import { motion } from 'framer-motion'
 import FAQCategory from '../../components/ui/FAQCategory'
 import Reveal from '../../components/ui/Reveal'
@@ -10,10 +11,13 @@ import FAQItem from '../../components/ui/FAQItem'
 import HeroCarousel from '../../components/ui/HeroCarousel'
 import HeroShape from "../../components/ui/HeroShape";
 import cardlifestyle from '../../assets/images/099cd76f0110a4b7c11c1416749744e57e11dfb6.jpg'
-import pb from '../../assets/images/UPI-DEBIT-CARD-1.jpg'
+import pb from '../../assets/images/prudent.png'
 import cardtwo from '../../assets/images/Frame1984077848.png'
-import traderPhoto from '../../assets/images/registration-trader.jpg'
-
+import traderPhoto from '../../assets/images/registration-trader.jpg';
+import watercolor from "../../assets/images/watercolor.png";
+import playstore from "../../assets/images/play-store.png";
+import appstore from "../../assets/images/app-store.png";
+import nihaophone from "../../assets/images/nihao-phone.png";
 import slide1 from "../../assets/images/slide1.png";
 import slide2 from "../../assets/images/slide2.png";
 import slide3 from "../../assets/images/slide1.png";
@@ -120,7 +124,7 @@ export default function Home() {
 
       {/* ================= ABOUT / WHO WE ARE ================= */}
       <section id="about" className="bg-white pt-20 pb-0">
-        <div className="width83percent mx-auto px-5 md:px-8 text-center">
+        <div className="hmewidth83percent mx-auto px-5 md:px-8 text-center">
           <Reveal>
             <span className="eyebrow text-slate whoweare">{about.eyebrow}</span>
           </Reveal>
@@ -132,7 +136,7 @@ export default function Home() {
           </Reveal>
         </div>
 
-        <div className="relative mt-16 pt-2 pb-24 pt-6em">
+        {/* <div className="relative mt-16 pt-2 pb-24 pt-6em">
           <WorldMapDots className="absolute inset-x-0 bottom-0 h-[70%] w-full opacity-90" />
           <div className="relative max-w-6xl mx-auto px-5 md:px-8">
             <div className="grid sm:grid-cols-3 gap-5 max-w-3xl mx-auto">
@@ -158,77 +162,147 @@ export default function Home() {
               </div>
             </Reveal>
           </div>
+        </div> */}
+        <div className="relative mt-16 py-24 overflow-hidden whowearemargin640">
+        {/* World Map Background */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          {/* <WorldMapDots className="w-full max-w-[1500px] h-auto opacity-80" /> */}
+          <WorldMapDots className="absolute inset-0 w-full h-full object-contain pointer-events-none" />
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-6xl mx-auto px-5 md:px-8">
+
+          {/* Cards */}
+          {/* <div className="grid sm:grid-cols-3 gap-5">
+            {heroStats.map((s, i) => (
+              <Reveal key={s.label} delay={i * 90}>
+                <div className="rounded-xl bg-navy text-white p-6 min-h-[170px] worldmapdesignh">
+                  <div className="font-display font-bold text-2xl worldmapdesigncount">
+                    <FaGlobe />
+                  </div>
+
+                  <div className="mt-2 font-semibold text-xl worldmapdesignh1">
+                   <CountUp value={s.value} suffix={s.suffix} /> {s.label}
+                  </div>
+
+                  <div className="text-white/70 text-base mt-1 worldmapdesignp">
+                    {s.sub}
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div> */}
+
+        <div className="grid sm:grid-cols-3 gap-5">
+          {heroStats.map((s, i) => (
+            <Reveal key={s.label} delay={i * 90}>
+              <div className="rounded-xl bg-navy text-white p-6 min-h-[170px] worldmapdesignh">
+                <div className="w-16 h-16 rounded-full bg-[#C9D2DC] flex items-center justify-center worldiconbg">
+                  <img
+                    src={s.icon}
+                    alt={s.label}
+                    className="w-9 h-9 object-contain worldiconbgimg"
+                  />
+                </div>
+
+                <div className="mt-5 font-semibold text-xl worldmapdesignh1">
+                  <CountUp value={s.value} suffix={s.suffix} /> {s.label}
+                </div>
+
+                <div className="text-white/70 text-base mt-2 worldmapdesignp">
+                  {s.sub}
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+        {/* Promise */}
+        <Reveal delay={260}>
+          <div className="max-w-xl ml-auto mt-24 brndpromisemargin">
+            <span className="eyebrow text-navy/70 hmebrandpromise">
+              Our brand promise is simple:
+            </span>
+
+            <p className="font-display text-4xl font-semibold text-navy mt-3 leading-tight hmebrandpromiseabt">
+              {about.promise}
+            </p>
+          </div>
+        </Reveal>
+
+  </div>
         </div>
       </section>
 
       {/* ================= YOUR CARD FOR EVERY LIFESTYLE ================= */}
-      {/* <section className="relative min-h-[320px] md:min-h-[380px]">
-       
-        <img src={cardlifestyle} alt="..." className="absolute inset-0 w-full h-full object-cover" />
-        <div
-          className="absolute inset-0 bg-navy"
-          style={{ clipPath: 'polygon(0 0, 58% 0, 40% 100%, 0 100%)' }}
+      
+      <section className="relative min-h-[360px] md:min-h-[506px] overflow-hidden">
+
+        {/* Background Image */}
+        <img
+          src={cardlifestyle}
+          alt="UnionPay"
+          className="absolute inset-0 w-full h-full object-cover" style={{objectPosition: "78% 36%"}}
         />
-        
-        <div className="relative max-w-6xl mx-auto px-5 md:px-8 h-full flex items-center py-16 md:py-0">
-          <div className="max-w-sm">
-            <Reveal>
-              <h2 className="font-display font-bold text-white text-3xl md:text-4xl leading-tight">
-                Your Card For Every Lifestyle
-              </h2>
-            </Reveal>
-            <Reveal delay={80}>
-              <p className="text-white/85 mt-4 leading-relaxed">{bankPartner.title}</p>
-            </Reveal>
+
+        {/* Main Gradient */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: `
+              linear-gradient(
+                90deg,
+                rgba(5,42,97,.98) 0%,
+                rgba(5,42,97,.95) 32%,
+                rgba(5,42,97,.82) 48%,
+                rgba(5,42,97,.45) 60%,
+                rgba(5,42,97,.12) 72%,
+                rgba(5,42,97,0) 84%
+              )
+            `,
+          }}
+        />
+
+        {/* Soft Glow */}
+        <div
+          className="absolute inset-y-0 left-0 w-[60%]"
+          style={{
+            background:
+              "linear-gradient(90deg, rgba(5,42,97,1) 0%, rgba(5,42,97,.9) 50%, rgba(5,42,97,.25) 80%, rgba(5,42,97,0) 100%)",
+            filter: "blur(14px)",
+            transform: "translateX(18px)",
+          }}
+        />
+
+        {/* Bottom Vignette */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to top, rgba(0,0,0,.15), transparent 30%)",
+          }}
+        />
+
+        {/* Content */}
+        <div className="absolute inset-0 z-10 flex items-center">
+          <div className="max-w-6xl mx-auto w-full px-5 md:px-8">
+            <div className="max-w-[540px]">
+
+              <Reveal>
+                <h2 className="font-display font-bold text-white text-4xl md:text-[60px] leading-[1.05] tracking-[-0.02em] hmecardlifestletxth">
+                  Your Card For Every Lifestyle
+                </h2>
+              </Reveal>
+
+              <Reveal delay={80}>
+                <p className="mt-6 text-lg md:text-xl leading-8 text-white/90 max-w-[430px] hmecardlifestletxthp">
+                  We've partnered with Ghana's premier banks to issue a tailored suite of cards.
+                </p>
+              </Reveal>
+
+            </div>
           </div>
         </div>
-      </section> */}
-
-      <section className="relative min-h-[360px] md:min-h-[470px] overflow-hidden">
-
-  {/* Background Image */}
-  <img
-    src={cardlifestyle}
-    alt=""
-    className="absolute inset-0 w-full h-full object-cover object-[72%_center]"
-  />
-
-  {/* Dark Blue Gradient */}
-  <div
-    className="absolute inset-0"
-    style={{
-      background:
-        "linear-gradient(90deg, rgba(5,42,97,0.97) 0%, rgba(5,42,97,0.94) 38%, rgba(5,42,97,0.72) 55%, rgba(5,42,97,0.18) 72%, rgba(5,42,97,0) 100%)",
-    }}
-  />
-
-  {/* Soft Glow */}
-  <div
-    className="absolute inset-y-0 left-0 w-[65%]"
-    style={{
-      background:
-        "linear-gradient(90deg, rgba(5,42,97,1) 0%, rgba(5,42,97,.95) 55%, rgba(5,42,97,.4) 82%, rgba(5,42,97,0) 100%)",
-      filter: "blur(22px)",
-      transform: "translateX(30px)",
-    }}
-  />
-
-  <div className="relative z-10 max-w-6xl mx-auto px-5 md:px-8 flex items-center h-full py-20">
-    <div className="max-w-[480px]">
-      <Reveal>
-        <h2 className="font-display font-bold text-white text-4xl md:text-6xl leading-[1.08] cardlifestyleh">
-          Your Card For Every Lifestyle
-        </h2>
-      </Reveal>
-
-      <Reveal delay={80}>
-        <p className="mt-6 text-xl text-white/90 leading-relaxed cardlifestylep">
-          We've partnered with Ghana's premier banks to issue a tailored suite
-          of cards.
-        </p>
-      </Reveal>
-    </div>
-  </div>
 
       </section>
 
@@ -237,7 +311,7 @@ export default function Home() {
         <div className="mx-auto px-5 md:px-8 text-center">
           <Reveal>
             <div className="flex items-center justify-center gap-3">
-              <span className="h-11 w-11 rounded-lg bg-gradient-to-br from-[#8FB6C7] to-[#4E7C93] flex items-center justify-center font-display font-bold text-white text-sm">
+              <span className="">
                 <img src={pb} alt="UnionPay" className="" />
               </span>
               <h2 className="font-display font-bold text-2xl md:text-3xl text-navy prudentbankh1">{bankPartner.bank}</h2>
@@ -248,7 +322,7 @@ export default function Home() {
           </Reveal>
         </div>
 
-        <div className="max-w-6xl mx-auto px-5 md:px-8 grid md:grid-cols-[1fr_1.15fr] gap-10 md:gap-16 mt-14 items-center mt7em">
+        <div className="max-w-6xl mx-auto px-5 md:px-8 grid md:grid-cols-[1fr_1.15fr] gap-10 md:gap-16 mt-14 items-center mt7-5em">
           <Reveal delay={100}>
             <img src={cardtwo} alt="UnionPay" className="" />
           </Reveal>
@@ -340,91 +414,85 @@ export default function Home() {
 
 
       {/* ================= NIHAO APP ================= */}
-      {/* <section id="nihao" className="py-16 md:py-24 px-4">
-    <div
-      className="relative overflow-hidden max-w-7xl mx-auto
-                rounded-tr-[40px] md:rounded-tr-[60px]
-                rounded-br-[120px] md:rounded-br-[180px]
-                bg-[#EEF5EE]"
-      style={{
-        clipPath:
-          "polygon(0 0,100% 0,100% 5%,97% 25%,93% 50%,97% 75%,100% 95%,95% 100%,0 100%)",
-      }}
-    > */}
-      {/* Background image */}
-      {/* <div
-        className="absolute inset-0 opacity-30 bg-cover bg-bottom"
+   <section id="nihao" className="py-16 lg:py-24 px-4 nihobody">
+    <div className="">
+
+      <div
+        className="relative overflow-hidden rounded-[40px]"
         style={{
-          backgroundImage: "url('/images/china-watercolor.png')",
+          clipPath: "polygon(0 0,100% 0,96% 100%,0 100%)",borderTopLeftRadius:"0"
         }}
-      /> */}
+      >
+        {/* Background */}
+        <img
+          src={watercolor}
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover"
+        />
 
-      {/* Soft overlay */}
-      {/* <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/30 to-transparent" />
+        {/* Content */}
+        <div className="relative z-10 grid lg:grid-cols-2 items-center gap-12 px-8 md:px-14 py-16 lg:py-20">
 
-      <div className="relative z-10 grid lg:grid-cols-2 items-center gap-12 px-8 md:px-14 py-16 md:py-20"> */}
+          {/* Left */}
+          <div className="max-w-[600px]">
 
-        {/* LEFT */}
-        {/* <div className="max-w-xl">
+            <Reveal>
+              <h2 className="font-display text-4xl lg:text-5xl font-bold text-navy nihaochinaapptop">
+                {nihao.title}
+              </h2>
+            </Reveal>
 
-          <Reveal>
-            <h2 className="font-display font-bold text-5xl text-navy leading-tight">
-              {nihao.title}
-            </h2>
-          </Reveal>
+            <Reveal delay={120}>
+              <p className="mt-8 text-lg leading-9 text-navy/90 nihaochinaapptoptxt">
+                {nihao.body}
+              </p>
+            </Reveal>
 
-          <Reveal delay={120}>
-            <p className="mt-8 text-lg leading-9 text-navy/85">
-              {nihao.body}
-            </p>
-          </Reveal>
+            <Reveal delay={180}>
+              <p className="mt-6 text-lg leading-9 text-navy/90 nihaochinaapptoptxt1">
+                {nihao.body2}
+              </p>
+            </Reveal>
 
-          <Reveal delay={180}>
-            <p className="mt-6 text-lg leading-9 text-navy/85">
-              {nihao.body2}
-            </p>
-          </Reveal>
+            <Reveal delay={250}>
+              <div className="mt-10 flex flex-wrap gap-5 nihaochinaapptoptxtdownload">
 
-          <Reveal delay={240}>
-            <div className="flex flex-wrap gap-5 mt-10">
-
-              <a href="#">
                 <img
-                  src="/images/app-store.png"
+                  src={appstore}
                   alt="App Store"
-                  className="h-14"
+                  className="h-14 w-auto cursor-pointer transition hover:scale-105"
                 />
-              </a>
 
-              <a href="#">
                 <img
-                  src="/images/google-play.png"
+                  src={playstore}
                   alt="Google Play"
-                  className="h-14"
+                  className="h-14 w-auto cursor-pointer transition hover:scale-105"
                 />
-              </a>
+
+              </div>
+            </Reveal>
+
+          </div>
+
+          {/* Phone */}
+          <Reveal delay={120}>
+            <div className="flex justify-center lg:justify-end">
+
+              <img
+                src={nihaophone}
+                alt="Nihao China"
+                className="w-[320px] sm:w-[380px] lg:w-[500px]"
+              />
 
             </div>
           </Reveal>
 
-        </div> */}
-
-        {/* PHONE */}
-        {/* <Reveal delay={120}>
-          <div className="flex justify-center lg:justify-end">
-
-            <img
-              src="/images/nihao-phone.png"
-              alt="Nihao China App"
-              className="w-[360px] lg:w-[430px] drop-shadow-[0_35px_60px_rgba(0,0,0,0.35)]"
-            />
-
-          </div>
-        </Reveal>
+        </div>
 
       </div>
+
     </div>
-      </section> */}
+  </section>
 
       {/* ================= FAQS ================= */}
       <section>
@@ -472,7 +540,7 @@ export default function Home() {
           <div
             className="relative flex-1 bg-red flex items-center px-8 md:px-14 py-14 bgE31837"
           >
-            <div className="max-w-sm text-white -ml-[3%] mauto mw71percent">
+            <div className="max-w-sm text-white -ml-[3%] mauto mw71percent100">
               <Reveal>
                 <h2 className="font-display font-bold text-3xl md:text-4xl leading-tight traderh1">
                   {registration.title}
