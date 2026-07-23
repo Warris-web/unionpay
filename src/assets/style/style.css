@@ -25,11 +25,17 @@
     font-family: Noto Sans;
     font-weight: 500;
     font-style: Medium;
-    font-size: 23.36px;
+    font-size: 20.36px;
     leading-trim: NONE;
-    line-height: 33.37px;
+    line-height: 27.37px;
     letter-spacing: -0.25px;
     color: #FFFFFF;
+}
+.footrerimg{
+    margin-bottom: 40px;
+}
+.w100px{
+    width: 100px;
 }
 .pt1point6em{
     padding-top:1.6em
@@ -38,9 +44,9 @@
     font-family: Noto Sans;
     font-weight: 400;
     font-style: Regular;
-    font-size: 23.36px;
+    font-size: 22.36px;
     leading-trim: NONE;
-    line-height: 33.37px;
+    line-height: 30.37px;
     letter-spacing: -0.25px;
     color: #FFFFFF;
 }
@@ -62,9 +68,9 @@
     font-family: Noto Sans;
     font-weight: 400;
     font-style: Regular;
-    font-size: 23.36px;
+    font-size: 18.36px;
     leading-trim: NONE;
-    line-height: 33.37px;
+    line-height: 17.37px;
     letter-spacing: -0.25px;
     color: #FFFFFF
 
@@ -409,7 +415,7 @@
     margin-top: 10px;
 
 }
-.pr8point3em{
+.pr8point3emprudent{
      padding-right: 8.3em;
 }
 .mw98percent{
@@ -719,11 +725,49 @@
 .hmewatercolormtmb{
     margin-top: 4em;
     margin-bottom: 4em;
+    padding-left: 10em;
+}
+.width40pxpblogo{
+    
+}
+.formsubmitbtn {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.formsubmitbtn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000; 
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.formsubmitbtn:hover::before {
+  transform: scaleX(1);
+}
+
+.formsubmitbtn span {
+  position: relative;
+  z-index: 2;
+}
+.heightheroslide{
+    height: 732px
+}
+@media screen and (max-width: 1400px) {
+    .heightheroslide{
+        height: 700px
+    }
 }
 @media screen and (max-width: 1040px) {
+    
     .hmecourselh1 {
-        font-size: 40px;
-        line-height: 45.09px;
+        font-size: 31px;
+        line-height: 38.09px;
     }
     .hmecourselp {
         font-family: Noto Sans;
@@ -740,6 +784,35 @@
         font-size: 17px;
         leading-trim: NONE;
         line-height: 28.05px;
+    }
+    .hmecourselp {
+        font-family: Noto Sans;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 13px;
+        leading-trim: NONE;
+        line-height: 20px;
+    }
+    .heightheroslide{
+        height:495px
+    }
+    .heightnextherocour{
+        height: -webkit-fill-available;
+    }
+
+}
+@media screen and (max-width: 940px) {
+    .heightheroslide {
+        height: 470px;
+    }
+
+}
+@media screen and (max-width: 861px) {
+    .heightheroslide {
+        height: 420px;
+    }
+    .herocourseltxtall{
+        max-width: 50%;
     }
 
 }
@@ -766,8 +839,26 @@
   }
 }
 @media screen and (max-width: 767px) {
+    .whoweare {
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .whowearep {
+        font-size: 30.06px;
+        line-height: 30.07px;
+    }
+    .whowearetxt {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .cardlifestylewm{
+        width: 50%;
+        margin-left: 0;
+    }
     .hmeheaderpt{
         padding-top: 0em;
+        margin-top: 80px;
     }
     .headerdiv {
         padding: 1em 20px;
@@ -789,10 +880,81 @@
         leading-trim: NONE;
         line-height: 19.6px;
     }
+    .hmewatercolormtmb{
+        padding-left: 5em;
+    }
+    .heightheroslide {
+        height: 370px;
+    }
+    .herocourseltxtall{
+        max-width: 45%;
+    }
 
 
 }
+@media screen and (max-width: 666px) {
+    .heightheroslide {
+        height: 330px;
+    }
+
+}
+@media screen and (max-width: 595px) {
+    .heightheroslide {
+        height: 290px;
+    }
+    .hmecourselh1 {
+        font-size: 20px;
+        line-height: 23.09px;
+    }
+    .hmecourselp {
+        font-family: Noto Sans;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 12px;
+        leading-trim: NONE;
+        line-height: 17px;
+        margin-top: 15px;
+    }
+    .hmecoursellink {
+        font-family: Noto Sans;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 13px;
+        leading-trim: NONE;
+        line-height: 22.05px;
+        margin-top: 20px
+    }
+
+}
+@media screen and (max-width: 514px) {
+    .heightheroslide {
+        height: 250px;
+    }
+
+}
 @media screen and (max-width: 506px) {
+    .hmewatercolormtmb{
+        padding-left: 2em;
+    }
+    .pr8point3emprudent{
+        padding-right: 30px;
+    }
+    .width40pxpblogo{
+        width: 45px;
+
+    }
+    .hmecardlifestletxth {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .hmecardlifestletxthp{
+        font-size: 11px;
+        line-height: 14.6px;
+        margin-top: 10px;
+    }
+    .prudentresppt{
+        padding-top: 35px;
+    }
     .width65linkimg{
         width: 65px
     }
@@ -819,7 +981,7 @@
         font-family: Noto Sans;
         font-weight: 600;
         font-style: SemiBold;
-        font-size: 30.06px;
+        font-size: 26.06px;
         leading-trim: NONE;
         line-height: 25.07px;
     }
@@ -919,9 +1081,68 @@
 
 
 }
+@media screen and (max-width: 445px) {
+    .heightheroslide {
+        height: 217px;
+    }
+    .hmecourselh1 {
+        font-size: 13px;
+        line-height: 15.09px;
+    }
+    .hmecourselp {
+        font-family: Noto Sans;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 9px;
+        leading-trim: NONE;
+        line-height: 12px;
+        margin-top:10px;
+    }
+    .hmecoursellink {
+        font-family: Noto Sans;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 11px;
+        leading-trim: NONE;
+        line-height: 18.05px;
+    }
+    .whowearep {
+        font-family: Noto Sans;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 25.06px;
+        leading-trim: NONE;
+        line-height: 23.07px;
+    }
+    .whoweare {
+        font-family: Noto Sans;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 30px;
+    }
+    .whowearetxt {
+        font-family: Noto Sans;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 27px;
+    }
+
+}
 @media screen and (max-width: 400px) {
     .worldmapdesignh{
         height: auto
 
+    }
+    .heightheroslide {
+        height: 190px;
+    }
+}
+@media screen and (max-width: 330px) {
+    .heightheroslide {
+        height: 160px;
     }
 }

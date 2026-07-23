@@ -21,6 +21,7 @@ import nihaophone from "../../assets/images/nihao-phone.png";
 import slide1 from "../../assets/images/image2.png";
 import slide2 from "../../assets/images/image2.png";
 import slide3 from "../../assets/images/image2.png";
+import  test  from "../../assets/images/group1000007178.png";
 
 const heroSlides = [
   {
@@ -41,6 +42,32 @@ const heroSlides = [
   },
   {
     image: slide3,
+    title: "ACHIEVE MORE\nYOUR WAY.",
+    body:
+      "Global payments made simple for Ghanaian traders, travellers, and professionals. Pay smarter, anywhere in the world.",
+    cta: "Register to get a Card",
+    color: "#C71637",
+  },
+];
+const heroSlidess = [
+  {
+    image: test,
+    title: "ACHIEVE MORE\nYOUR WAY.",
+    body:
+      "Global payments made simple for Ghanaian traders, travellers, and professionals. Pay smarter, anywhere in the world.",
+    cta: "Register to get a Card",
+    color: "#E41E3F",
+  },
+  {
+    image: test,
+    title: "ACHIEVE MORE\nYOUR WAY.",
+    body:
+      "Global payments made simple for Ghanaian traders, travellers, and professionals. Pay smarter, anywhere in the world.",
+    cta: "Register to get a Card",
+    color: "#D11F45",
+  },
+  {
+    image: test,
     title: "ACHIEVE MORE\nYOUR WAY.",
     body:
       "Global payments made simple for Ghanaian traders, travellers, and professionals. Pay smarter, anywhere in the world.",
@@ -71,24 +98,24 @@ export default function Home() {
     <main id="top" className="overflow-x-clip">
       {/* ================= HERO ================= */}
 
-    <section className="relative pt-16 md:pt-[72px] overflow-hidden hmeheaderpt">
+    {/* <section className="relative pt-16 md:pt-[72px] overflow-hidden hmeheaderpt">
       <HeroCarousel>
         {heroSlides.map((slide, index) => (
         <div
           key={index}
           className="relative h-[620px] md:h-[760px] overflow-hidden"
         >
-          {/* Background Image */}
+         
           <img
             src={slide.image}
             alt=""
             className="absolute inset-0 w-full h-full object-cover object-[100%_20%]"
           />
 
-          {/* Red SVG Shape */}
+         
           <HeroShape color={slide.color} />
 
-          {/* Content */}
+         
           <div className="relative z-20 max-w-7xl mx-auto h-full px-6 md:px-10 flex items-center">
             <div className="max-w-lg">
               <Reveal>
@@ -120,8 +147,54 @@ export default function Home() {
         </div>
       ))}
       </HeroCarousel>
+    </section> */}
+    <section className="relative pt-16 md:pt-[72px] overflow-hidden hmeheaderpt">
+      <HeroCarousel>
+        {heroSlidess.map((slide, index) => (
+          <div
+            key={index}
+            className="relative h-[620px] md:h-[760px] overflow-hidden heightnextherocour"
+          >
+            <img
+              src={slide.image}
+              alt=""
+              className="absolute inset-0 w-full object-contain"
+            />
+
+            <div className="relative z-10 max-w-7xl mx-auto h-full px-6 md:px-10 flex items-center">
+              <div className="max-w-lg herocourseltxtall">
+                <Reveal>
+                  <h1 className="font-display font-extrabold text-white text-5xl md:text-7xl leading-[1.05] hmecourselh1">
+                    {slide.title.split("\n").map((line) => (
+                      <span key={line} className="block">
+                        {line}
+                      </span>
+                    ))}
+                  </h1>
+                </Reveal>
+
+                <Reveal delay={120}>
+                  <p className="mt-8 text-white/90 text-lg leading-9 max-w-md hmecourselp">
+                    {slide.body}
+                  </p>
+                </Reveal>
+
+                <Reveal delay={220}>
+                  <a
+                    href="#register"
+                    className="inline-block mt-10 text-white text-xl pb-1 hover:opacity-90 hmecoursellink"
+                  >
+                    {slide.cta}
+                  </a>
+                </Reveal>
+            </div>
+            </div>
+          </div>
+        ))}
+      </HeroCarousel>
     </section>
 
+   
       {/* ================= ABOUT / WHO WE ARE ================= */}
       <section id="about" className="bg-white pt-20 pb-0">
         <div className="hmewidth83percent mx-auto px-5 md:px-8 text-center">
@@ -284,7 +357,7 @@ export default function Home() {
 
         {/* Content */}
         <div className="absolute inset-0 z-10 flex items-center">
-          <div className="max-w-6xl mx-auto w-full px-5 md:px-8">
+          <div className="max-w-6xl mx-auto w-full px-5 md:px-8 cardlifestylewm">
             <div className="max-w-[540px]">
 
               <Reveal>
@@ -306,12 +379,12 @@ export default function Home() {
       </section>
 
       {/* ================= PRUDENTIAL BANK PARTNER ================= */}
-      <section className="bg-white py-20 md:py-24">
+      <section className="bg-white py-20 md:py-24 prudentresppt">
         <div className="mx-auto px-5 md:px-8 text-center">
           <Reveal>
             <div className="flex items-center justify-center gap-3">
               <span className="">
-                <img src={pb} alt="UnionPay" className="" />
+                <img src={pb} alt="UnionPay" className="width40pxpblogo" />
               </span>
               <h2 className="font-display font-bold text-2xl md:text-3xl text-navy prudentbankh1">{bankPartner.bank}</h2>
             </div>
@@ -369,7 +442,7 @@ export default function Home() {
           </svg>
 
           {/* Content */}
-          <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-20 text-white pr8point3em">
+          <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-20 text-white pr8point3emprudent">
             <Reveal>
               <h2 className="font-display font-bold text-3xl md:text-5xl max-w-md leading-tight benefithead">
                 {benefits.title}
@@ -564,51 +637,193 @@ export default function Home() {
   )
 }
 
-function RegistrationForm() {
-  return (
-    <form onSubmit={(e) => e.preventDefault()}>
-      <h3 className="font-display font-bold text-xl text-white mb-8 regformhead">Registration Form</h3>
-      <div className="grid sm:grid-cols-2 gap-x-10 gap-y-6">
-        <Field label="First Name" name="firstName" />
-        <Field label="Last Name" name="lastName" />
-        <Field label="Email Address" name="email" type="email" />
-        <Field label="Phone Number" name="phone" type="tel" />
-        <Field label="Message" name="message" type="textarea" className="sm:col-span-2" />
-      </div>
-      <div className='text-center'>
-        <button
-          type="submit"
-          className="mt-9 rounded-lg bg-red text-white font-semibold px-9 py-3 hover:bg-red-deep transition-colors duration-300 formsubmitbtn"
-        >
-          {registration.cta}
-        </button>
-      </div>
-    </form>
-  )
-}
-
-// function Field({ label, name, type = 'text' }) {
+// function RegistrationForm() {
 //   return (
-//     <label className="flex flex-col gap-2">
-//       <span className="text-sm font-medium text-white">{label}</span>
-//       <input
-//         name={name}
-//         type={type}
-//         required
-//         className="bg-transparent border-b border-white/40 py-1.5 text-sm text-white focus:border-white outline-none transition-colors placeholder:text-white/40"
-//       />
-//     </label>
+//     <form onSubmit={(e) => e.preventDefault()}>
+//       <h3 className="font-display font-bold text-xl text-white mb-8 regformhead">Registration Form</h3>
+//       <div className="grid sm:grid-cols-2 gap-x-10 gap-y-6">
+//         <Field label="First Name" name="firstName" />
+//         <Field label="Last Name" name="lastName" />
+//         <Field label="Email Address" name="email" type="email" />
+//         <Field label="Phone Number" name="phone" type="tel" />
+//         <Field label="Message" name="message" type="textarea" className="sm:col-span-2" />
+//       </div>
+//       <div className='text-center'>
+//         <button
+//           type="submit"
+//           className="mt-9 rounded-lg bg-red text-white font-semibold px-9 py-3 hover:bg-red-deep transition-colors duration-300 formsubmitbtn"
+//         >
+//           {registration.cta}
+//         </button>
+//       </div>
+//     </form>
 //   )
 // }
 
-function Field({ label, name, type = "text", className = "" }) {
+// function Field({ label, name, type = "text", className = "" }) {
+//   return (
+//     <label className={`flex flex-col ${className}`}>
+//       <span className="text-sm font-medium text-white regformheadfield">{label}</span>
+
+//       {type === "textarea" ? (
+//         <textarea
+//           name={name}
+//           required
+//           rows={1}
+//           className="bg-transparent border-b border-white/40 py-1.5 text-sm text-white focus:border-white outline-none transition-colors placeholder:text-white/40 resize-none"
+//         />
+//       ) : (
+//         <input
+//           name={name}
+//           type={type}
+//           required
+//           className="bg-transparent border-b border-white/40 py-1.5 text-sm text-white focus:border-white outline-none transition-colors placeholder:text-white/40"
+//         />
+//       )}
+//     </label>
+//   );
+// }
+
+
+function RegistrationForm() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbwD9UYoBok2dBWwPsiISMyj2-gaymjtszQOuWZo0iJdQ4Z-4y3L19KbXZ3edu6GiXuB/exec",
+        {
+          method: "POST",
+          body: JSON.stringify(formData),
+        }
+      );
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert("Registration Successful!");
+
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        alert("Something went wrong.");
+      }
+    } catch (err) {
+      console.log(err);
+      alert("Unable to submit.");
+    }
+
+    setLoading(false);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <h3 className="font-display font-bold text-xl text-white mb-8 regformhead">
+        Registration Form
+      </h3>
+
+      <div className="grid sm:grid-cols-2 gap-x-10 gap-y-6">
+
+        <Field
+          label="First Name"
+          name="firstName"
+          value={formData.firstName}
+          onChange={handleChange}
+        />
+
+        <Field
+          label="Last Name"
+          name="lastName"
+          value={formData.lastName}
+          onChange={handleChange}
+        />
+
+        <Field
+          label="Email Address"
+          name="email"
+          type="email"
+          value={formData.email}
+          onChange={handleChange}
+        />
+
+        <Field
+          label="Phone Number"
+          name="phone"
+          type="tel"
+          value={formData.phone}
+          onChange={handleChange}
+        />
+
+        <Field
+          label="Message"
+          name="message"
+          type="textarea"
+          className="sm:col-span-2"
+          value={formData.message}
+          onChange={handleChange}
+        />
+      </div>
+
+      <div className="text-center">
+        <button
+          type="submit"
+          disabled={loading}
+          className="group relative mt-9 overflow-hidden rounded-lg bg-red text-white font-semibold px-9 py-3 formsubmitbtn"
+        >
+          <span className="absolute inset-0 bg-black origin-right scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"></span>
+
+          <span className="relative z-10">
+            {loading ? "Submitting..." : registration.cta}
+          </span>
+        </button>
+      </div>
+    </form>
+  );
+}
+
+function Field({
+  label,
+  name,
+  type = "text",
+  className = "",
+  value,
+  onChange,
+}) {
   return (
     <label className={`flex flex-col ${className}`}>
-      <span className="text-sm font-medium text-white regformheadfield">{label}</span>
+      <span className="text-sm font-medium text-white regformheadfield">
+        {label}
+      </span>
 
       {type === "textarea" ? (
         <textarea
           name={name}
+          value={value}
+          onChange={onChange}
           required
           rows={1}
           className="bg-transparent border-b border-white/40 py-1.5 text-sm text-white focus:border-white outline-none transition-colors placeholder:text-white/40 resize-none"
@@ -617,6 +832,8 @@ function Field({ label, name, type = "text", className = "" }) {
         <input
           name={name}
           type={type}
+          value={value}
+          onChange={onChange}
           required
           className="bg-transparent border-b border-white/40 py-1.5 text-sm text-white focus:border-white outline-none transition-colors placeholder:text-white/40"
         />
@@ -624,7 +841,6 @@ function Field({ label, name, type = "text", className = "" }) {
     </label>
   );
 }
-
 function FAQSection() {
   const [open, setOpen] = useState(false)
   const panelRef = useRef(null)
@@ -710,13 +926,13 @@ function FAQSection() {
         className="overflow-hidden transition-[max-height] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
       > */}
       <motion.div
-  initial={false}
-  animate={{
-    height: open ? "auto" : 0,
-    opacity: open ? 1 : 0,
-  }}
-  transition={{ duration: 0.45 }}
-  className="overflow-hidden">
+          initial={false}
+          animate={{
+            height: open ? "auto" : 0,
+            opacity: open ? 1 : 0,
+          }}
+          transition={{ duration: 0.45 }}
+          className="overflow-hidden">
         <div className="max-w-6xl mx-auto px-5 md:px-8 py-12 faqundertxttop">
           <h3 className="font-display font-bold text-2xl md:text-3xl text-navy mb-8 faqundertxt">
             {faqIntro.title}

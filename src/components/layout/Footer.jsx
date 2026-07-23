@@ -6,8 +6,8 @@ export default function Footer() {
     <footer className="bgDB1E33 text-white footerbg">
       <div className="max-w-6xl mx-auto px-5 md:px-8 py-14 grid gap-10 md:grid-cols-[1fr_1fr_1.4fr]">
         <div>
-          <a href='' className="relative rounded-md overflow-hidden flex shrink-0 mb-6">
-           <img src={logo} alt="Logo" className='width65linkimg' />
+          <a href='' className="relative rounded-md overflow-hidden flex shrink-0 mb-6 footrerimg">
+           <img src={logo} alt="UnionPay Logo" className='width65linkimg' className="w100px" />
           </a>
           <p className="font-display text-xl font-semibold leading-tight whitespace-pre-line footerlogotxt">
             {footer.tagline}
