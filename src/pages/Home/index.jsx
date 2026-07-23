@@ -74,51 +74,51 @@ export default function Home() {
     <section className="relative pt-16 md:pt-[72px] overflow-hidden hmeheaderpt">
       <HeroCarousel>
         {heroSlides.map((slide, index) => (
-  <div
-    key={index}
-    className="relative h-[620px] md:h-[760px] overflow-hidden"
-  >
-    {/* Background Image */}
-    <img
-      src={slide.image}
-      alt=""
-      className="absolute inset-0 w-full h-full object-cover object-[100%_20%]"
-    />
+        <div
+          key={index}
+          className="relative h-[620px] md:h-[760px] overflow-hidden"
+        >
+          {/* Background Image */}
+          <img
+            src={slide.image}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover object-[100%_20%]"
+          />
 
-    {/* Red SVG Shape */}
-    <HeroShape color={slide.color} />
+          {/* Red SVG Shape */}
+          <HeroShape color={slide.color} />
 
-    {/* Content */}
-    <div className="relative z-20 max-w-7xl mx-auto h-full px-6 md:px-10 flex items-center">
-      <div className="max-w-lg">
-        <Reveal>
-          <h1 className="font-display font-extrabold text-white text-5xl md:text-7xl leading-[1.05] hmecourselh1">
-            {slide.title.split("\n").map((line) => (
-              <span key={line} className="block">
-                {line}
-              </span>
-            ))}
-          </h1>
-        </Reveal>
+          {/* Content */}
+          <div className="relative z-20 max-w-7xl mx-auto h-full px-6 md:px-10 flex items-center">
+            <div className="max-w-lg">
+              <Reveal>
+                <h1 className="font-display font-extrabold text-white text-5xl md:text-7xl leading-[1.05] hmecourselh1">
+                  {slide.title.split("\n").map((line) => (
+                    <span key={line} className="block">
+                      {line}
+                    </span>
+                  ))}
+                </h1>
+              </Reveal>
 
-        <Reveal delay={120}>
-          <p className="mt-8 text-white/90 text-lg leading-9 max-w-md hmecourselp">
-            {slide.body}
-          </p>
-        </Reveal>
+              <Reveal delay={120}>
+                <p className="mt-8 text-white/90 text-lg leading-9 max-w-md hmecourselp">
+                  {slide.body}
+                </p>
+              </Reveal>
 
-        <Reveal delay={220}>
-          <a
-            href="#register"
-            className="inline-block mt-10 text-white text-xl pb-1 hover:opacity-90 hmecoursellink"
-          >
-            {slide.cta}
-          </a>
-        </Reveal>
-      </div>
-    </div>
-  </div>
-))}
+              <Reveal delay={220}>
+                <a
+                  href="#register"
+                  className="inline-block mt-10 text-white text-xl pb-1 hover:opacity-90 hmecoursellink"
+                >
+                  {slide.cta}
+                </a>
+              </Reveal>
+            </div>
+          </div>
+        </div>
+      ))}
       </HeroCarousel>
     </section>
 
@@ -219,7 +219,7 @@ export default function Home() {
         </div>
         {/* Promise */}
         <Reveal delay={260}>
-          <div className="max-w-xl ml-auto mt-24 brndpromisemargin">
+          <div className="max-w-xl mx-auto mt-24 text-left brndpromisemargin">
             <span className="eyebrow text-navy/70 hmebrandpromise">
               Our brand promise is simple:
             </span>
@@ -229,7 +229,6 @@ export default function Home() {
             </p>
           </div>
         </Reveal>
-
   </div>
         </div>
       </section>
@@ -414,59 +413,74 @@ export default function Home() {
 
 
       {/* ================= NIHAO APP ================= */}
-   <section id="nihao" className="py-16 lg:py-24 px-4 nihobody">
-    <div className="">
+    <section id="nihao" className="py-16 lg:py-24 px-4 nihobody">
+      <div className="">
 
-      <div
-        className="relative overflow-hidden rounded-[40px]"
-        style={{
-          clipPath: "polygon(0 0,100% 0,96% 100%,0 100%)",borderTopLeftRadius:"0"
-        }}
-      >
-        {/* Background */}
-        <img
-          src={watercolor}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover"
-        />
+        <div
+          className="relative overflow-hidden rounded-[40px]"
+          style={{
+            clipPath: "polygon(0 0,100% 0,96% 100%,0 100%)",borderTopLeftRadius:"0"
+          }}
+        >
+          {/* Background */}
+          <img
+            src={watercolor}
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover"
+          />
 
-        {/* Content */}
-        <div className="relative z-10 grid lg:grid-cols-2 items-center gap-12 px-8 md:px-14 py-16 lg:py-20">
+          {/* Content */}
+          <div className="relative z-10 grid lg:grid-cols-2 items-center gap-12 px-8 md:px-14 py-16 lg:py-20 hmewatercolormtmb">
 
-          {/* Left */}
-          <div className="max-w-[600px]">
+            {/* Left */}
+            <div className="max-w-[600px]">
 
-            <Reveal>
-              <h2 className="font-display text-4xl lg:text-5xl font-bold text-navy nihaochinaapptop">
-                {nihao.title}
-              </h2>
-            </Reveal>
+              <Reveal>
+                <h2 className="font-display text-4xl lg:text-5xl font-bold text-navy nihaochinaapptop">
+                  {nihao.title}
+                </h2>
+              </Reveal>
 
+              <Reveal delay={120}>
+                <p className="mt-8 text-lg leading-9 text-navy/90 nihaochinaapptoptxt">
+                  {nihao.body}
+                </p>
+              </Reveal>
+
+              <Reveal delay={180}>
+                <p className="mt-6 text-lg leading-9 text-navy/90 nihaochinaapptoptxt1">
+                  {nihao.body2}
+                </p>
+              </Reveal>
+
+              <Reveal delay={250}>
+                <div className="mt-10 flex flex-wrap gap-5 nihaochinaapptoptxtdownload">
+
+                  <img
+                    src={appstore}
+                    alt="App Store"
+                    className="h-14 w-auto cursor-pointer transition hover:scale-105"
+                  />
+
+                  <img
+                    src={playstore}
+                    alt="Google Play"
+                    className="h-14 w-auto cursor-pointer transition hover:scale-105"
+                  />
+
+                </div>
+              </Reveal>
+
+            </div>
+
+            {/* Phone */}
             <Reveal delay={120}>
-              <p className="mt-8 text-lg leading-9 text-navy/90 nihaochinaapptoptxt">
-                {nihao.body}
-              </p>
-            </Reveal>
-
-            <Reveal delay={180}>
-              <p className="mt-6 text-lg leading-9 text-navy/90 nihaochinaapptoptxt1">
-                {nihao.body2}
-              </p>
-            </Reveal>
-
-            <Reveal delay={250}>
-              <div className="mt-10 flex flex-wrap gap-5 nihaochinaapptoptxtdownload">
+              <div className="flex justify-center lg:justify-end">
 
                 <img
-                  src={appstore}
-                  alt="App Store"
-                  className="h-14 w-auto cursor-pointer transition hover:scale-105"
-                />
-
-                <img
-                  src={playstore}
-                  alt="Google Play"
-                  className="h-14 w-auto cursor-pointer transition hover:scale-105"
+                  src={nihaophone}
+                  alt="Nihao China"
+                  className="w-[320px] sm:w-[380px] lg:w-[500px]"
                 />
 
               </div>
@@ -474,25 +488,10 @@ export default function Home() {
 
           </div>
 
-          {/* Phone */}
-          <Reveal delay={120}>
-            <div className="flex justify-center lg:justify-end">
-
-              <img
-                src={nihaophone}
-                alt="Nihao China"
-                className="w-[320px] sm:w-[380px] lg:w-[500px]"
-              />
-
-            </div>
-          </Reveal>
-
         </div>
 
       </div>
-
-    </div>
-  </section>
+    </section>
 
       {/* ================= FAQS ================= */}
       <section>

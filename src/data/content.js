@@ -41,7 +41,7 @@ export const bankPartner = {
   title: "We've partnered with Ghana's premier banks to issue a tailored suite of cards.",
   bank: 'Prudential Bank',
   tagline: 'The UnionPay card from Prudential Bank. Pay your way, everywhere.',
-  body: "Wherever life takes you — the market on your street, a shop across town, or a checkout counter on the other side of the world — your Prudential Bank UnionPay card goes with you. Accepted in over 180 countries, it's one card for every day and every journey.",
+  body: "Wherever life takes you, the market on your street, a shop across town, or a checkout counter on the other side of the world, your Prudential Bank UnionPay card goes with you. Accepted in over 180 countries, it's one card for every day and every journey.",
   cta: 'Get your Card Today',
 }
 
