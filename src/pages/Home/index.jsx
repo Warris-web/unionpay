@@ -21,7 +21,8 @@ import nihaophone from "../../assets/images/nihao-phone.png";
 import slide1 from "../../assets/images/image2.png";
 import slide2 from "../../assets/images/image2.png";
 import slide3 from "../../assets/images/image2.png";
-import  test  from "../../assets/images/group1000007178.png";
+import  slideimg1  from "../../assets/images/group1000007178.png";
+import  slideimg2  from "../../assets/images/Group40.png";
 
 const heroSlides = [
   {
@@ -51,7 +52,7 @@ const heroSlides = [
 ];
 const heroSlidess = [
   {
-    image: test,
+    image: slideimg1,
     title: "ACHIEVE MORE\nYOUR WAY.",
     body:
       "Global payments made simple for Ghanaian traders, travellers, and professionals. Pay smarter, anywhere in the world.",
@@ -59,21 +60,14 @@ const heroSlidess = [
     color: "#E41E3F",
   },
   {
-    image: test,
+    image: slideimg2,
     title: "ACHIEVE MORE\nYOUR WAY.",
     body:
       "Global payments made simple for Ghanaian traders, travellers, and professionals. Pay smarter, anywhere in the world.",
     cta: "Register to get a Card",
     color: "#D11F45",
   },
-  {
-    image: test,
-    title: "ACHIEVE MORE\nYOUR WAY.",
-    body:
-      "Global payments made simple for Ghanaian traders, travellers, and professionals. Pay smarter, anywhere in the world.",
-    cta: "Register to get a Card",
-    color: "#C71637",
-  },
+ 
 ];
 
 import {
