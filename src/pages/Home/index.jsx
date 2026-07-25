@@ -1,6 +1,8 @@
 import { useRef, useState } from 'react'
 import { ArrowRight, Banknote, Globe2,ChevronDown, Landmark, ShieldCheck, ShoppingBag, Smartphone, Wallet } from 'lucide-react'
 import { FaBeer, FaCoffee, FaHome, FaGlobe } from 'react-icons/fa';
+import Header from '../../components/layout/Header'
+import Footer from '../../components/layout/Footer'
 import { motion } from 'framer-motion'
 import FAQCategory from '../../components/ui/FAQCategory'
 import Reveal from '../../components/ui/Reveal'
@@ -89,6 +91,8 @@ const benefitIcons = [ShieldCheck, Landmark, Banknote, ShoppingBag, Globe2, Wall
 
 export default function Home() {
   return (
+    <>
+    <Header />
     <main id="top" className="overflow-x-clip">
       {/* ================= HERO ================= */}
 
@@ -628,55 +632,10 @@ export default function Home() {
         </div>
       </section>
     </main>
+    <Footer />
+    </>
   )
 }
-
-// function RegistrationForm() {
-//   return (
-//     <form onSubmit={(e) => e.preventDefault()}>
-//       <h3 className="font-display font-bold text-xl text-white mb-8 regformhead">Registration Form</h3>
-//       <div className="grid sm:grid-cols-2 gap-x-10 gap-y-6">
-//         <Field label="First Name" name="firstName" />
-//         <Field label="Last Name" name="lastName" />
-//         <Field label="Email Address" name="email" type="email" />
-//         <Field label="Phone Number" name="phone" type="tel" />
-//         <Field label="Message" name="message" type="textarea" className="sm:col-span-2" />
-//       </div>
-//       <div className='text-center'>
-//         <button
-//           type="submit"
-//           className="mt-9 rounded-lg bg-red text-white font-semibold px-9 py-3 hover:bg-red-deep transition-colors duration-300 formsubmitbtn"
-//         >
-//           {registration.cta}
-//         </button>
-//       </div>
-//     </form>
-//   )
-// }
-
-// function Field({ label, name, type = "text", className = "" }) {
-//   return (
-//     <label className={`flex flex-col ${className}`}>
-//       <span className="text-sm font-medium text-white regformheadfield">{label}</span>
-
-//       {type === "textarea" ? (
-//         <textarea
-//           name={name}
-//           required
-//           rows={1}
-//           className="bg-transparent border-b border-white/40 py-1.5 text-sm text-white focus:border-white outline-none transition-colors placeholder:text-white/40 resize-none"
-//         />
-//       ) : (
-//         <input
-//           name={name}
-//           type={type}
-//           required
-//           className="bg-transparent border-b border-white/40 py-1.5 text-sm text-white focus:border-white outline-none transition-colors placeholder:text-white/40"
-//         />
-//       )}
-//     </label>
-//   );
-// }
 
 
 function RegistrationForm() {

@@ -86,12 +86,11 @@
     font-family: Noto Sans;
     font-weight: 500;
     font-style: Medium;
-    font-size: 22px;
+    font-size: 20px;
     leading-trim: NONE;
     line-height: 33.37px;
     letter-spacing: -0.25px;
     color: #0F172A;
-    margin-left:10px
 
 
 
@@ -532,7 +531,7 @@
 
 }
 .hmeheaderpt{
-    padding-top: 6em;
+    padding-top: 6.4em;
 }
 .hmetophero1{
 
@@ -758,9 +757,122 @@
 .heightheroslide{
     height: 732px
 }
+.privacyheadpadd{
+    padding: 7em 0 6em 0px;
+}
+.privacytitle{
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 50.06px;
+    leading-trim: NONE;
+    line-height: 60.07px;
+    letter-spacing: 0.66px;
+    text-align: center;
+    color: #0F172A;
+
+
+}
+.privacytitledate{
+    font-family: Sansation;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #5C5C5C;
+    margin-top: 2em;;
+
+
+}
+.fprivacytxt{
+    font-family: Instrument Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 21px;
+    leading-trim: NONE;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #475569
+
+}
+.fprivacytxtspan{
+    font-family: Instrument Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 21px;
+    leading-trim: NONE;
+    line-height: 32px;
+    letter-spacing: 0px;
+
+}
+.privacyhetxt{
+    color: #033484;
+    font-family: Onest;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 33.04px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+.privacyhetxtunder{
+    font-family: Instrument Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 21.48px;
+    leading-trim: NONE;
+    line-height: 40px;
+    letter-spacing: 0%;
+    color: #475569
+
+}
+.privacyhetxtlabelh{
+    font-family: Instrument Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 21.48px;
+    leading-trim: NONE;
+    line-height: 40px;
+    letter-spacing: 0%;
+    color: #475569
+
+}
+.privacyhetxtlabel{
+    font-family: Instrument Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 21.48px;
+    leading-trim: NONE;
+    line-height: 40px;
+    letter-spacing: 0%;
+    color: #475569;
+
+
+
+}
 @media screen and (max-width: 1400px) {
     .heightheroslide{
         height: 700px
+    }
+}
+@media screen and (max-width: 1345px) {
+    .heightheroslide{
+        height: 655px
+    }
+}
+@media screen and (max-width: 1250px) {
+    .heightheroslide{
+        height: 624px
+    }
+}
+@media screen and (max-width: 1185px) {
+    .heightheroslide{
+        height: 592px
     }
 }
 @media screen and (max-width: 1040px) {
@@ -858,7 +970,7 @@
     }
     .hmeheaderpt{
         padding-top: 0em;
-        margin-top: 80px;
+        margin-top: 97px;
     }
     .headerdiv {
         padding: 1em 20px;
@@ -896,6 +1008,10 @@
     .heightheroslide {
         height: 330px;
     }
+    .hmeheaderpt {
+        padding-top: 0em;
+        margin-top: 91px;
+    }
 
 }
 @media screen and (max-width: 595px) {
@@ -930,9 +1046,45 @@
     .heightheroslide {
         height: 250px;
     }
+    .benefithead {
+        font-size: 25.03px;
+        line-height: 30px;
+    }
+    .benefitheadp {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .benefittdxt {
+        font-size: 13px;
+        line-height: 19px;
 
+    }
+    .nihaochinaapptop {
+        font-size: 32px;
+        line-height: 39.07px;
+    }
+    .nihaochinaapptoptxt {
+        font-size: 17px;
+        margin-top: 12px;
+        line-height: 26px;
+    }
+    .nihaochinaapptoptxt1{
+        font-size: 17px;
+        margin-top: 12px;
+        line-height: 26px;
+
+    }
+    .hmewatercolormtmb {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-top: 1em;
+    }
 }
 @media screen and (max-width: 506px) {
+    .hmeheaderpt {
+        padding-top: 0em;
+        margin-top: 73px;
+    }
     .hmewatercolormtmb{
         padding-left: 2em;
     }
@@ -1144,5 +1296,31 @@
 @media screen and (max-width: 330px) {
     .heightheroslide {
         height: 160px;
+    }
+}
+@media screen and (max-width: 298px) {
+    .heightheroslide {
+        height: 150px;
+    }
+    .hmecourselh1 {
+        font-size: 8px;
+        line-height: 9.09px;
+    }
+    .hmecourselp{
+        font-size:7px;
+        line-height: 9px;
+        margin-top: 6px;
+
+    }
+    .hmecoursellink{
+        margin-top: 0;
+        font-size: 7px;
+        line-height: 14.05px;
+    }
+
+}
+@media screen and (max-width: 255px) {
+    .heightheroslide {
+        height: 125px;
     }
 }

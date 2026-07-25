@@ -1,5 +1,6 @@
 import { footer } from '../../data/content'
 import logo from "../../assets/images/logo.png";
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -29,7 +30,7 @@ export default function Footer() {
 
           <div className="flex gap-6 text-sm text-white/85 pt3point6em">
             {footer.legal.map((l, index) => (
-              <a
+              <Link to="/privacy-policy"
                 key={l}
                 href="#"
                 className={`hover:text-white transition-colors footerprivacylink ${
@@ -37,7 +38,7 @@ export default function Footer() {
                 }`}
               >
                 {l}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
