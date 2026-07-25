@@ -1,6 +1,7 @@
 import Header from '../../components/layout/Header'
 import Footer from '../../components/layout/Footer'
 import { privacyMeta, privacySections, privacyCta } from '../../data/privacyContent'
+import { Link } from 'react-router'; 
 
 export default function PrivacyPolicy() {
   return (
@@ -84,18 +85,18 @@ export default function PrivacyPolicy() {
       </section>
 
       {/* ================= CTA BANNER ================= */}
-      <section className="bg-navy py-8">
+      <section className="bg-navy py-8 privacyreadytobg">
         <div className="max-w-6xl mx-auto px-5 md:px-6 flex flex-col md:flex-row items-center justify-between gap-5 text-center md:text-left">
-          <h3 className="font-display font-bold text-xl md:text-2xl text-white max-w-md">
+          <h3 className="font-display font-bold text-xl md:text-2xl text-white max-w-md privactbttnregisterh">
             {privacyCta.title}
           </h3>
 
-          <a
-            href="#register"
-            className="inline-flex items-center rounded-full border border-white/60 text-white text-sm font-medium px-6 py-3 hover:bg-white hover:text-navy transition-colors"
+          <Link to="/#register"
+          
+            className="inline-flex items-center border border-white/60 text-white text-sm font-medium px-6 py-3 hover:bg-white hover:text-navy transition-colors privactbttnregister"
           >
             {privacyCta.cta}
-          </a>
+          </Link>
         </div>
       </section>
     </main>

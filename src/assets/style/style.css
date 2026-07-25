@@ -880,6 +880,63 @@
     margin-top: 13px;
     margin-right: 7px;
 }
+.privacyreadytobg{
+    background: #1E63A5;
+    padding: 60px 10px;
+}
+.privacytextbttm{
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 40px;
+    leading-trim: NONE;
+    line-height: 57px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+
+}
+.privactbttnregisterh{
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 30px;
+    leading-trim: NONE;
+    line-height: 44px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #fff
+
+
+}
+.privactbttnregister{
+    border: 2px solid #FFFFFF;
+    border-radius: 13.35px;
+    padding: 15px 50px;
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 22px;
+    leading-trim: NONE;
+    line-height: 40.05px;
+    letter-spacing: -0.52px;
+    text-align: center;
+}
+.privacytextbttmne{
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 40.05px;
+    letter-spacing: -0.52px;
+    text-align: center;
+    color: #fff
+
+}
 @media screen and (max-width: 1400px) {
     .heightheroslide{
         height: 700px
