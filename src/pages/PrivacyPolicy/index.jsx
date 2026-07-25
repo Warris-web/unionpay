@@ -37,44 +37,46 @@ export default function PrivacyPolicy() {
           </div>
 
           {/* Sections */}
-          <div className="rounded-2xl bg-white border border-line mt-5 divide-y divide-line overflow-hidden">
+          <div className="rounded-2xl bg-white border border-line mt-5 overflow-hidden privacybodybgtxt">
             {privacySections.map((s) => (
-              <div key={s.number} className="p-5 md:p-6">
-                <h2 className="font-display font-bold text-lg text-navy pl-3 mb-4 privacyhetxt">
-                  {s.number}. {s.title}
-                </h2>
+              <div className="p-5 md:p-6 privacyborderinset">
+                <div key={s.number} className="">
+                  <h2 className="font-display font-bold text-lg text-navy pl-3 mb-4 privacyhetxt">
+                    {s.number}. <span>{s.title}</span>
+                  </h2>
 
-                <p className="text-sm text-slate leading-relaxed mb-3 privacyhetxtunder">
-                  {s.body}
-                </p>
-
-                {s.bullets.length > 0 && (
-                  <ul className="space-y-2 pl-1">
-                    {s.bullets.map((b, i) => (
-                      <li
-                        key={i}
-                        className="flex gap-2 text-sm text-slate leading-relaxed"
-                      >
-                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-red shrink-0" />
-
-                        <span className="privacyhetxtlabel">
-                          {b.label && (
-                            <span className="font-semibold text-navy privacyhetxtlabelh">
-                              {b.label}{" "}
-                            </span>
-                          )}
-                          {b.text}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-
-                {s.footnote && (
-                  <p className="text-sm text-slate leading-relaxed mt-3 privacyhetxtlabel">
-                    {s.footnote}
+                  <p className="text-sm text-slate leading-relaxed mb-3 privacyhetxtunder privacyborderinsetnext">
+                    {s.body}
                   </p>
-                )}
+
+                  {s.bullets.length > 0 && (
+                    <ul className="space-y-2 pl-1 privacyborderinsetnext">
+                      {s.bullets.map((b, i) => (
+                        <li
+                          key={i}
+                          className="flex gap-2 text-sm text-slate leading-relaxed "
+                        >
+                          <span className="mt-2 h-1.5 w-1.5  shrink-0 dotnumberprivacy" />
+
+                          <span className="privacyhetxtlabel">
+                            {b.label && (
+                              <span className="font-semibold text-navy privacyhetxtlabelh">
+                                {b.label}{" "}
+                              </span>
+                            )}
+                            {b.text}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {s.footnote && (
+                    <p className="text-sm text-slate leading-relaxed mt-3 privacyhetxtlabel privacyborderinsetnext">
+                      {s.footnote}
+                    </p>
+                  )}
+                </div>
               </div>
             ))}
           </div>
