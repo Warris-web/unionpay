@@ -25,6 +25,8 @@ import slide2 from "../../assets/images/image2.png";
 import slide3 from "../../assets/images/image2.png";
 import  slideimg1  from "../../assets/images/group1000007178.png";
 import  slideimg2  from "../../assets/images/Group40.png";
+import  gcblogo  from "../../assets/images/gcbbanklogo.png";
+import  gcbcard  from "../../assets/images/gcbcard.png";
 
 const heroSlides = [
   {
@@ -77,6 +79,7 @@ import {
   heroStats,
   about,
   bankPartner,
+  bankPartner1,
   benefits,
   nihao,
   registration,
@@ -401,10 +404,45 @@ export default function Home() {
             <div>
               <p className="text-slate leading-relaxed prudentbanktxt">{bankPartner.body}</p>
               <a
-                href="#register"
+                href="https://www.prudentialbank.com.gh/blogdetails/introducing-pbl-unionpay-debit-and-prepaid-cards"
                 className="inline-flex items-center gap-2 mt-7 text-navy pb-0.5 hover:gap-3 transition-all prudentbanktxtlink"
               >
                 {bankPartner.cta} 
+              </a>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ================= GCB BANK PARTNER ================= */}
+      <section className="bg-white py-20 md:py-24 prudentresppt borderforbanks">
+        <div className="mx-auto px-5 md:px-8 text-center">
+          <Reveal>
+            <div className="flex items-center justify-center gap-3">
+              <span className="">
+                <img src={gcblogo} alt="UnionPay" className="width40pxpblogo" />
+              </span>
+              <h2 className="font-display font-bold text-2xl md:text-3xl text-navy prudentbankh1">{bankPartner1.bank}</h2>
+            </div>
+          </Reveal>
+          <Reveal delay={70}>
+            <p className="text-red font-medium prudentbankp">{bankPartner1.tagline}</p>
+          </Reveal>
+        </div>
+
+        <div className="max-w-6xl mx-auto px-5 md:px-8 grid md:grid-cols-[1fr_1.15fr] gap-10 md:gap-16 mt-14 items-center mt7-5em">
+          <Reveal delay={100}>
+            <img src={gcbcard} alt="UnionPay" className="" />
+          </Reveal>
+
+          <Reveal delay={160}>
+            <div className='prudentbanktxtnextbank'>
+              <p className="text-slate leading-relaxed prudentbanktxt">{bankPartner1.body}</p>
+              <a
+                href="#register"
+                className="inline-flex items-center gap-2 mt-7 text-navy pb-0.5 hover:gap-3 transition-all prudentbanktxtlink"
+              >
+                {bankPartner1.cta} 
               </a>
             </div>
           </Reveal>
@@ -527,17 +565,21 @@ export default function Home() {
               <Reveal delay={250}>
                 <div className="mt-10 flex flex-wrap gap-5 nihaochinaapptoptxtdownload">
 
-                  <img
-                    src={appstore}
-                    alt="App Store"
-                    className="h-14 w-auto cursor-pointer transition hover:scale-105"
-                  />
+                  <a href='https://apps.apple.com/us/app/nihao-china/id1187814659'>  
+                    <img
+                      src={appstore}
+                      alt="App Store"
+                      className="h-14 w-auto cursor-pointer transition hover:scale-105"
+                    />
+                  </a>
 
-                  <img
-                    src={playstore}
-                    alt="Google Play"
-                    className="h-14 w-auto cursor-pointer transition hover:scale-105"
-                  />
+                  <a href='https://play.google.com/store/apps/details?id=com.unionpay.intl&hl=en_ZA&pli=1'>
+                    <img
+                      src={playstore}
+                      alt="Google Play"
+                      className="h-14 w-auto cursor-pointer transition hover:scale-105"
+                    />
+                  </a>
 
                 </div>
               </Reveal>
@@ -623,13 +665,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-navy py-16 md:py-20 rounded-br-[110px] md:rounded-br-[200px] regform">
-          <div className="max-w-3xl mx-auto px-5 md:px-8">
-            <Reveal>
-              <RegistrationForm />
-            </Reveal>
-          </div>
-        </div>
+        
       </section>
     </main>
     <Footer />

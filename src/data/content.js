@@ -45,6 +45,16 @@ export const bankPartner = {
   cta: 'Get your Card Today',
 }
 
+export const bankPartner1 = {
+  eyebrow: 'Your card for every lifestyle',
+  title: "We've partnered with Ghana's premier banks to issue a tailored suite of cards.",
+  bank: 'GCB Bank',
+  tagline: 'Trade Ghana-China. Trade with Confidence. Pay with Ease.',
+  body: "Get one card for your China journey so you can go further with GCB UnionPay, spend confidently in China with GCB UnionPay card, and pay seamlessly with your GCB UnionPay card.",
+  cta: 'Get your Card Today',
+}
+
+
 export const benefits = {
   eyebrow: 'Why choose UnionPay',
   title: 'Why Choose UnionPay in Ghana?',
@@ -173,7 +183,7 @@ export const footer = {
   columns: [
     { title: 'About UnionPay', href: '#about' },
     { title: 'Get a Card', href: '#register' },
-    { title: 'Download App', href: '#nihao' },
+    // { title: 'Download App', href: '#nihao' },
   ],
   promise: '"UnionPay Your Way” Putting you in control, wherever your journey takes you.',
   legal: ['Privacy Policy', 'Terms & Conditions'],

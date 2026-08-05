@@ -18,7 +18,7 @@
     margin-left: auto;
 }
 .pt3point6em{
-    padding-top: 3.6em;
+    padding-top:1.6em;
 }
 /* Footer */
 .footerlogotxt{
@@ -178,13 +178,16 @@
     font-family: Noto Sans;
     font-weight: 400;
     font-style: Regular;
-    font-size: 26px;
+    font-size: 25px;
     leading-trim: NONE;
     line-height: 43px;
     letter-spacing: -0.73px;
     color: #475569;
     margin-top: -6.5em;
 
+}
+.prudentbanktxtnextbank{
+    margin-top: 9em;
 }
 .prudentbanktxtlink{
     font-family: Noto Sans;
@@ -424,7 +427,7 @@
     position: relative;
 }
 .mt7-5em{
-    margin-top: 7em;
+    margin-top: 5em;
 }
 .mw71percent100{
     max-width: 71%;
@@ -434,6 +437,9 @@
 }
 .brndpromisemargin{
     margin-top: 97px
+}
+.borderforbanks{
+   border-top: #00000026 solid 1px;
 }
 #nihao::before{
     content:"";
@@ -1033,6 +1039,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+    .prudentbanktxtnextbank{
+        margin-top: 0;
+    }
     .privacyborderinsetnext{
         width: 100%
     }
