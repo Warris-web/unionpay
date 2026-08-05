@@ -180,14 +180,14 @@ export default function Home() {
                   </p>
                 </Reveal>
 
-                <Reveal delay={220}>
+                {/* <Reveal delay={220}>
                   <a
                     href="#register"
                     className="inline-block mt-10 text-white text-xl pb-1 hover:opacity-90 hmecoursellink"
                   >
                     {slide.cta}
                   </a>
-                </Reveal>
+                </Reveal> */}
             </div>
             </div>
           </div>
