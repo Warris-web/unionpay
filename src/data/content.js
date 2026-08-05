@@ -182,8 +182,8 @@ export const footer = {
   tagline: 'Achieve More\nYour Way',
   columns: [
     { title: 'About UnionPay', href: '#about' },
-    { title: 'Get a Card', href: '#register' },
-    // { title: 'Download App', href: '#nihao' },
+    { title: 'Card Holder Service', href: 'https://www.unionpayintl.com/en/servicesProducts/index.html' },
+    { title: 'Global Offers & Services', href: 'https://www.unionpayintl.com/cardholderServ/serviceCenter/merchant?language=en' },
   ],
   promise: '"UnionPay Your Way” Putting you in control, wherever your journey takes you.',
   legal: ['Privacy Policy', 'Terms & Conditions'],
