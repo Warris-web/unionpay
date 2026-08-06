@@ -439,7 +439,7 @@ export default function Home() {
             <div className='prudentbanktxtnextbank'>
               <p className="text-slate leading-relaxed prudentbanktxt">{bankPartner1.body}</p>
               <a
-                href="#register"
+                href="https://www.gcbbank.com.gh/"
                 className="inline-flex items-center gap-2 mt-7 text-navy pb-0.5 hover:gap-3 transition-all prudentbanktxtlink"
               >
                 {bankPartner1.cta} 

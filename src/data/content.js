@@ -173,7 +173,7 @@ export const faqCategories = [
 export const registration = {
   eyebrow: 'Unlock your global access',
   title: 'Unlock Your Global Access',
-  body: 'Fill the registration form to get a card and our partner bank will reach out to you for the next step.',
+  body: 'Get a card from our partner banks',
   fields: ['First Name', 'Last Name', 'Email Address', 'Phone Number'],
   cta: 'Submit',
 }
